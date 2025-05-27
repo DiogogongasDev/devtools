@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>Meu Portfólio Dev</title>
+  <style>
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f172a;
+      color: #f1f5f9;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1e293b;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: #f1f5f9;
+      margin-left: 1rem;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 3rem 2rem;
+    }
+
+    .hero {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: #38bdf8;
+    }
+
+    .about, .contact {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #0f172a;
+      font-size: 0.9rem;
+    }
+
+    button {
+      background: #38bdf8;
+      border: none;
+      color: #0f172a;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0ea5e9;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+
+      .botao {
+      background: #38bdf8;
+      border: none;
+      color: #0f172a;
+      padding: 0.4rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .botao:hover {
+      background: #0ea5e9;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>DevTools Portfolio</h1>
+
+</header>
+
+<section id="home" class="hero">
+  <h2>Bem-vindo ao DevTools</h2>
+  <p>Aqui podes encontrar ferramentas úteis para desenvolvedores web.</p>
+</section>
+
+<section id="projects">
+  <h2>🧰 Projetos</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>🎨 Alertas em Swal Fire</h3>
+      <p>Aqui podes encotrar todos os tipo de Alertas em Swal Fire</p>
+      <br>
+      <a href="alertas_swal_fire/index.html" class="botao">Ver Alertas</a>
+    </div>
+    <div class="card">
+      <h3>📏 Atalhos do VsCode</h3>
+      <p>Aqui podes encontrar os atalhos mais usados pelos desenvolvedores </p>
+      <br>
+      <button onclick="showShortcuts()">Ver Atalhos</button>
+    </div>
+
+
+    
+    <!-- Adicione mais cards conforme necessário -->
+  </div>
+</section>
+
+
+
+<script>
+    function showShortcuts() {
+      Swal.fire({
+        title: 'Atalhos VS Code',
+        html: `<ul style="text-align: left;">
+          <li><b>Ctrl + P</b>: Buscar arquivos</li>
+          <li><b>Ctrl + Shift + P</b>: Paleta de comandos</li>
+          <li><b>Ctrl + /</b>: Comentar linha</li>
+          <li><b>Alt + Shift + ↓</b>: Duplicar linha</li>
+          <li><b>Ctrl + D</b>: Selecionar palavra seguinte</li>
+          <li><b>Ctrl + B</b>: Mostrar/ocultar barra lateral</li>
+          <li><b>Ctrl + Space</b>: Sugestões de código</li>
+        </ul>`,
+        icon: 'info'
+      });
+    }
+</script>
+
+</body>
+</html>
