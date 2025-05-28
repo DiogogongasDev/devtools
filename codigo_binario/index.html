@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferramentas para Programadores</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+  <div class="container">
+  
+
+    <div class="tool">
+      <h2>5. Codificador Binário</h2>
+      <textarea id="binaryInput" placeholder="Texto para codificar em Binário..."></textarea>
+      <button onclick="encodeBinary()">Codificar</button>
+      <pre id="binaryOutput" class="hidden"></pre>
+    </div>
+
+    <div class="tool">
+      <h2>6. Decodificador Binário</h2>
+      <textarea id="binaryDecodeInput" placeholder="Código Binário para decodificar..."></textarea>
+      <button onclick="decodeBinary()">Decodificar</button>
+      <pre id="binaryDecodeOutput" class="hidden"></pre>
+    </div>
+</body>
+</html>

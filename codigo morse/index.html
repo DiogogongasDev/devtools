@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferramentas para Programadores</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div class="container">
+
+
+    <div class="tool">
+      <h2>3. Codificador Morse</h2>
+      <textarea id="morseInput" placeholder="Texto para codificar em Morse..."></textarea>
+      <button onclick="encodeMorse()">Codificar</button>
+      <pre id="morseOutput" class="hidden"></pre>
+    </div>
+
+    <div class="tool">
+      <h2>4. Decodificador Morse</h2>
+      <textarea id="morseDecodeInput" placeholder="Código Morse para decodificar..."></textarea>
+      <button onclick="decodeMorse()">Decodificar</button>
+      <pre id="morseDecodeOutput" class="hidden"></pre>
+    </div>
+
+ 
+  </div>
+
+ 
+</body>
+</html>
