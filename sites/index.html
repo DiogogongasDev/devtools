@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>Meu Portfólio Dev</title>
+  <style>
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f172a;
+      color: #f1f5f9;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1e293b;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: #f1f5f9;
+      margin-left: 1rem;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 3rem 2rem;
+    }
+
+    .hero {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: #38bdf8;
+    }
+
+    .about, .contact {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #0f172a;
+      font-size: 0.9rem;
+    }
+
+    button {
+      background: #38bdf8;
+      border: none;
+      color: #0f172a;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background: #0ea5e9;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  
+    pre {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 1rem;
+      border-radius: 6px;
+      overflow-x: auto;
+      border: 1px solid #334155;
+    }
+
+      code {
+      display: block;
+      background: #333446;
+      padding: 0.5rem;
+      border-radius: 6px;
+      color: #cbd5e1;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>DevTools Portfolio</h1>
+
+</header>
+
+<section id="home" class="hero">
+  <h2>Sites</h2>
+  <p>Aqui podes encontrar alguns dos sites mais usados durante o desenvolvimento web</p>
+</section>
+
+<section id="projects">
+  <h2>🧰 Sites</h2>
+    <div class="tool">
+      <br>
+      <h2>Bootstrap</h2>
+      <div id="swalExamples">
+        <br><br>
+        <p><b>1. Bootstrap:</b></p>
+        <code>https://getbootstrap.com/</code>
+       <a href="https://getbootstrap.com/"> <button>Visitar Site</button></a><br><br> 
+
+        <p><b>2. Swal Fire:</b></p>
+        <code>https://sweetalert2.github.io/</code>
+ <a href="https://sweetalert2.github.io/"> <button>Visitar Site</button></a><br><br> 
+
+        <p><b>3. AOS:</b></p>
+                <code>https://michalsnik.github.io/aos/</code>
+ <a href="https://michalsnik.github.io/aos/"> <button>Visitar Site</button></a><br><br> 
+ 
+        <p><b>4. GSAP:</b></p>
+                <code>https://gsap.com/</code>
+ <a href="https://gsap.com/"> <button>Visitar Site</button></a><br><br> 
+
+                <p><b>4. Fontawesome:</b></p>
+                        <code>https://fontawesome.com/icons</code>
+  <a href="https://fontawesome.com/icons"> <button>Visitar Site</button></a><br><br> 
+
+              <p><b>4. Color Hunt:</b></p>
+                      <code>https://colorhunt.co/</code>
+ <a href="https://colorhunt.co/"> <button>Visitar Site</button></a><br><br> 
+
+      </div>
+    </div>
+
+
+
+    
+    <!-- Adicione mais cards conforme necessário -->
+  </div>
+</section>
+
+
+
+
+
+
+
+<script>
+    function showShortcuts() {
+      Swal.fire({
+        title: 'Atalhos VS Code',
+        html: `<ul style="text-align: left;">
+          <li><b>Ctrl + P</b>: Buscar arquivos</li>
+          <li><b>Ctrl + Shift + P</b>: Paleta de comandos</li>
+          <li><b>Ctrl + /</b>: Comentar linha</li>
+          <li><b>Alt + Shift + ↓</b>: Duplicar linha</li>
+          <li><b>Ctrl + D</b>: Selecionar palavra seguinte</li>
+          <li><b>Ctrl + B</b>: Mostrar/ocultar barra lateral</li>
+          <li><b>Ctrl + Space</b>: Sugestões de código</li>
+        </ul>`,
+        icon: 'info'
+      });
+    }
+</script>
+
+</body>
+</html>
